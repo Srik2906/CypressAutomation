@@ -4,13 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/cypress run",
+    "dashboard" : "npm run test -- --record --key 37d5bd36-db71-4780-955d-151023f17b46"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^10.0.2",
     "cypress-iframe": "^1.0.1",
+    "mocha": "^10.0.0",
     "mochawesome": "^7.1.3"
   }
 }
