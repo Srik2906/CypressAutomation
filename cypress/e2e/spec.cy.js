@@ -2,7 +2,7 @@
 
 describe("Test suite", () => {
   it("Test case", () => {
-    cy.visit("https://rahulshettyacademseleniumPractise/#/")
+    cy.visit("https://rahulshettyacademyseleniumPractise/#/")
     cy.get('input.search-keyword').type('ca')
     cy.get('.products').as('productLocator')
     cy.get('@productLocator').find('.product').should('have.length', 4)
